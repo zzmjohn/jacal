@@ -7,7 +7,7 @@ Subject: update texinfo
  1 file changed, 16 insertions(+), 9 deletions(-)
 
 diff --git a/jacal.texi b/jacal.texi
-index 9d88188..fc51bae 100644
+index 3ef45a2..c81755e 100644
 --- a/jacal.texi
 +++ b/jacal.texi
 @@ -343,7 +343,7 @@ end-of-file character will terminate the session.
@@ -19,7 +19,7 @@ index 9d88188..fc51bae 100644
  
  Using @code{divide} to divide a polynomial by an integer does not work.
  
-@@ -674,8 +674,9 @@ e1 : suchthat(x, e0);
+@@ -675,8 +675,9 @@ e1 : suchthat(x, e0);
  e1: ---------
          a
  @end example
@@ -30,7 +30,7 @@ index 9d88188..fc51bae 100644
  
  If an expression rather than an equation is given to @code{suchthat}, it
  is as though the equation @code{@var{exp}=0} was given.
-@@ -687,8 +688,9 @@ e2 : suchthat(x, e0);
+@@ -688,8 +689,9 @@ e2 : suchthat(x, e0);
  e2: ---------
          a
  @end example
@@ -41,7 +41,7 @@ index 9d88188..fc51bae 100644
  
  An alternative infix notation is also available for @code{suchthat}.
  
-@@ -856,8 +858,9 @@ and the @code{imagpart} of @var{z}.
+@@ -857,8 +859,9 @@ and the @code{imagpart} of @var{z}.
  
  Returns the degree of polynomial or equation @var{poly} in variable
  @var{var}.
@@ -52,7 +52,7 @@ index 9d88188..fc51bae 100644
  
  Returns the total-degree, the degree of its highest degree monomial,
  of polynomial or equation @var{poly}.
-@@ -1015,10 +1018,12 @@ e15: [- x - y + z, 2 x  + 2 x y + 2 y ]
+@@ -1016,10 +1019,12 @@ e15: [- x - y + z, 2 x  + 2 x y + 2 y ]
  Returns @var{poly1} reduced with respect to @var{poly2} (or @var{eqn})
  and @var{var}.  If @var{poly2} is univariate, the third argument is not
  needed.
@@ -67,7 +67,7 @@ index 9d88188..fc51bae 100644
  Returns @var{poly1} with all the coefficients taken modulo the
  current modulus.
  
-@@ -1141,8 +1146,9 @@ e1 : factor(-120);
+@@ -1220,8 +1225,9 @@ e1 : factor(-120);
  e1: -1 2  3 5
  @end group
  @end example
@@ -78,7 +78,7 @@ index 9d88188..fc51bae 100644
  Given a univariate ratio of polynomials @var{polyratio}, returns a
  matrix of factors and exponents.
  
-@@ -1909,7 +1915,7 @@ the sum of the inputs' ranks, and the components of the result are
+@@ -2028,7 +2034,7 @@ the sum of the inputs' ranks, and the components of the result are
  formed from the pair-wise products of components of the inputs.  For
  example, for the input tensors @code{x[a,b]} and @code{y[c]}
  @example
@@ -87,7 +87,7 @@ index 9d88188..fc51bae 100644
  @end example
  
  With an additional argument, @code{tmult} will produce the inner product
-@@ -2262,8 +2268,9 @@ to the Jacal session where you left off by simply typing @code{(math)}.
+@@ -2464,8 +2470,9 @@ to the Jacal session where you left off by simply typing @code{(math)}.
  If you do not wish to return to Jacal but really want to terminate the
  session and return to the operating system, then after typing
  @code{qed();}, type @code{(slib:exit)} or use @code{quit}.
