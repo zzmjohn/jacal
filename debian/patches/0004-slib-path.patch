@@ -1,0 +1,21 @@
+From: "Barak A. Pearlmutter" <barak+git@cs.nuim.ie>
+Date: Tue, 10 Dec 2013 18:48:42 +0000
+Subject: slib path
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 130107b..f0bb7ba 100644
+--- a/Makefile
++++ b/Makefile
+@@ -195,7 +195,7 @@ install-script: jacal.sh installdirs
+ 	$(INSTALL_DATA) go-scm $(DESTDIR)$(jacallibdir)go.scm
+ 	rm go-scm
+ 	echo '#! /bin/sh'			   > jacal-script
+-	grep -h ^SCHEME_LIBRARY_PATH= `which slib`>> jacal-script
++	echo SCHEME_LIBRARY_PATH=/usr/share/slib/ >> jacal-script
+ 	echo export SCHEME_LIBRARY_PATH		  >> jacal-script
+ 	echo JACALDIR=$(DESTDIR)$(jacallibdir)	  >> jacal-script
+ 	echo VERSION=$(VERSION)			  >> jacal-script

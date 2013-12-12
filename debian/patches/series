@@ -1,3 +1,4 @@
 0001-makefile-clean-version.txi.patch
 0002-guile-version.patch
 0003-update-texinfo.patch
+0004-slib-path.patch
